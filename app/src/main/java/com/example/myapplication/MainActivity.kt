@@ -1,7 +1,6 @@
 package com.example.myapplication
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -9,8 +8,8 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
 
-    private fun showToast(message: String) {
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+    private fun showLifecycleToast(event: String) {
+        MyCustomToast.show(this, event)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,36 +23,36 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        showToast("onCreate()")
+        showLifecycleToast("onCreate()")
     }
 
     override fun onStart() {
         super.onStart()
-        showToast("onStart()")
+        showLifecycleToast("onStart()")
     }
 
     override fun onResume() {
         super.onResume()
-        showToast("onResume()")
+        showLifecycleToast("onResume()")
     }
 
     override fun onPause() {
         super.onPause()
-        showToast("onPause()")
+        showLifecycleToast("onPause()")
     }
 
     override fun onStop() {
         super.onStop()
-        showToast("onStop()")
+        showLifecycleToast("onStop()")
     }
 
     override fun onRestart() {
         super.onRestart()
-        showToast("onRestart()")
+        showLifecycleToast("onRestart()")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        showToast("onDestroy()")
+        showLifecycleToast("onDestroy()")
     }
 }
