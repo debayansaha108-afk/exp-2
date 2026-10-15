@@ -43,8 +43,3 @@ app/
             │   └── bg_custom_toast.xml
             └── layout/
                 └── layout_custom_toast.xml
-
-
-
-
-
