@@ -26,6 +26,8 @@ An Android application developed using Android Studio and Kotlin as part of the 
 - XML
 - Android SDK
 
+[Screen_recording_20260731_123930.webm](https://github.com/user-attachments/assets/883a2d83-bf8e-47fd-aced-f0ea2c3b93dc)
+
 ## 📂 Project Structure
 
 ```text
@@ -43,6 +45,6 @@ app/
                 └── layout_custom_toast.xml
 
 
-[Screen_recording_20260731_123930.webm](https://github.com/user-attachments/assets/883a2d83-bf8e-47fd-aced-f0ea2c3b93dc)
-# android-lab
+
+
 
